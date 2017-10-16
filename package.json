@@ -1,0 +1,34 @@
+{
+  "name": "Simple-Grid",
+  "version": "1.0.0",
+  "description": "A lightweight, responsive CSS grid",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build:css & NODE_ENV=production npm run build:css:prefix",
+    "build:css": "node-sass src/simple-grid.scss dist/simple-grid.css",
+    "build:css:prefix": "postcss dist/simple-grid.css -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sgnl/Simple-Grid.git"
+  },
+  "keywords": [],
+  "author": "Ray Farias <rayrfarias@gmail.com> (http://github.com/sgnl)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sgnl/Simple-Grid/issues"
+  },
+  "homepage": "https://github.com/sgnl/Simple-Grid#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.5",
+    "cssnano": "^3.10.0",
+    "node-sass": "^4.5.3",
+    "postcss-cli": "^4.1.1",
+    "rimraf": "^2.6.2"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
