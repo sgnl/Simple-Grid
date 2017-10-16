@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run build:css & NODE_ENV=production npm run build:css:prefix",
-    "build:css": "node-sass src/simple-grid.scss dist/simple-grid.css",
-    "build:css:prefix": "postcss dist/simple-grid.css -d dist"
+    "dev": "npm run build:css -- --replace --watch --poll",
+    "build": "NODE_ENV=production npm run build:css",
+    "build:css": "postcss dist/simple-grid.css"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
     "cssnano": "^3.10.0",
     "node-sass": "^4.5.3",
     "postcss-cli": "^4.1.1",
+    "postcss-node-sass": "^1.2.0",
     "rimraf": "^2.6.2"
   },
   "browserslist": [
