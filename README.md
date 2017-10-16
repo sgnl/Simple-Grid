@@ -1,4 +1,4 @@
-# Simpler Grid
+# grid
 A lightweight, responsive CSS grid
 
 Based on Simple Grid which is developed by Zach Cole. Forked and removed the typography, added a build system.

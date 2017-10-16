@@ -1,5 +1,5 @@
 {
-  "name": "Simple-Grid",
+  "name": "grid",
   "version": "1.0.0",
   "description": "A lightweight, responsive CSS grid",
   "main": "index.js",
@@ -7,19 +7,19 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npm run build:css -- --replace --watch --poll",
     "build": "NODE_ENV=production npm run build:css",
-    "build:css": "postcss dist/simple-grid.css"
+    "build:css": "postcss dist/grid.css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sgnl/Simple-Grid.git"
+    "url": "git+https://github.com/sgnl/grid.git"
   },
   "keywords": [],
   "author": "Ray Farias <rayrfarias@gmail.com> (http://github.com/sgnl)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sgnl/Simple-Grid/issues"
+    "url": "https://github.com/sgnl/grid/issues"
   },
-  "homepage": "https://github.com/sgnl/Simple-Grid#readme",
+  "homepage": "https://github.com/sgnl/grid#readme",
   "devDependencies": {
     "autoprefixer": "^7.1.5",
     "cssnano": "^3.10.0",
